@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="Url" value="https://www.saucedemo.com/"/>
+  <test thread-count="2" parallel="classes" name="test1(failed)">
+    <classes>
+      <class name="NegativeTestCase">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="printErrorMsg"/>
+        </methods>
+      </class> <!-- NegativeTestCase -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
